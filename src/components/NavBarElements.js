@@ -1,23 +1,35 @@
 import React from 'react';
 import { Navbar, Container, Nav, NavDropdown, Form, Button } from 'react-bootstrap';
-import logo from '../images/logo.png';
+import logo from '../images/부산잡자로고만.png';
+import logo_letter from '../images/부산잡자글자만.png';
 
 const NavBarElements = () => {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
         <Navbar.Brand href="/">
+        <div style={{ display: 'flex', alignItems: 'center' }}>
           <img
-            src={ logo }
+            src={logo}
             alt="LOGO"
-            width="40"
-            height="40"
+            width="50"
+            height="75"
             className="d-inline-block align-top"
           />
-          <span style={{marginLeft:'10px', marginRight:'100px'}}>부산 청년 일자리 항구</span>
-        </Navbar.Brand>
-        
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <img
+              src={logo_letter}
+              alt="LOGO"
+              width="150"
+              height="40"
+              className="d-inline-block align-top"
+              style={{ marginLeft: '20px'}} 
+            />
+          </div>
+        </div>
 
+
+        </Navbar.Brand>
 
         <Form className="d-flex mx-auto">
           <Form.Control

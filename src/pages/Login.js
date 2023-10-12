@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { Container, Col, Row, Form, Button } from 'react-bootstrap';
 import '../Login.css';
-import logo from '../images/logo.png';
+import logo from '../images/부산잡자로고만.png';
 
 const Login = () => {
   // 로그인 폼 필드의 상태
@@ -22,14 +22,15 @@ const Login = () => {
     <Container className="login-container" style={{ overflowY: 'auto', height: '110vh' }}>
       <Row>
         <Col md={{ span: 6, offset: 3 }}>
-        <div className="text-center">
-  <img
-    src={ logo }
-    alt="로고"
-    width="100" // 이미지 가로 크기 조절
-    height="100" // 이미지 세로 크기 조절
-    className="mb-4 mt-4" // 이미지 아래에 간격을 추가합니다
-  /></div>
+          <div className="text-center">
+            <img
+              src={ logo }
+              alt="로고"
+              width="100" 
+              height="140" 
+              className="mb-4 mt-4" // 이미지 아래에 간격을 추가
+            />
+          </div>
           <div className="login-form">
             <h3 className="mb-3">BYCP에 오신것을 환영합니다.</h3>
             <h6>BYCP는 부산광역시 청년층의 취업을 위한 맞춤형 구직상담 서비스를 제공합니다.</h6>
